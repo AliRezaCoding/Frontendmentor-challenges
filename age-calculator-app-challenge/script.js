@@ -22,7 +22,6 @@ const validateInputs = function (inputs) {
     let validated = true;
     const invalidInput = () => (validated = false);
 
-
     // For Empty Input Fields
     if (!day) {
         displayError("This field is required", inputDay);
@@ -45,19 +44,27 @@ const validateInputs = function (inputs) {
         invalidInput();
     }
 
-    // For Inputs > Regular (day, month, year) Format
+    // For Inputs > / < Regular (day, month, year) Format
     if (day > 31 || day < 0 || day === 0) {
         displayError("Must be a valid day", inputDay);
         invalidInput();
     }
 
+    // For Inputs > / < Regular (day, month, year) Format
     if (month > 12 || month < 0 || month === 0) {
         displayError("Must be a valid month", inputMonth);
         invalidInput();
     }
 
+    // For Inputs > Regular (day, month, year) Format
     if (year > new Date().getFullYear()) {
         displayError("Must be in the past", inputYear);
+        invalidInput();
+    }
+
+    // For Dates > Current Date (at all);
+    if (new Date(year, month, day) > new Date()) {
+        displayError("Must be a valid date", inputDay);
         invalidInput();
     }
 
@@ -92,9 +99,9 @@ const calculateAge = function (dob) {
 
 // DISPLAY AGE IN DOM
 const displayAge = function (age) {
-    const resultYear = document.querySelector('.result__year');
-    const resultMonth = document.querySelector('.result__month');
-    const resultDay = document.querySelector('.result__day');
+    const resultYear = document.querySelector(".result__year");
+    const resultMonth = document.querySelector(".result__month");
+    const resultDay = document.querySelector(".result__day");
 
     resultYear.textContent = age.years;
     resultMonth.textContent = age.months;
@@ -130,7 +137,7 @@ const removeErrors = () => {
 btnSumbitDate.addEventListener("click", function (e) {
     e.preventDefault();
 
-    // IF Any Error Remove It 
+    // IF Any Error Remove It
     removeErrors();
 
     // VALIDATION
