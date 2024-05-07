@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="responsive.css">
+        <script defer src="script.js"></script>
+
+        <title>App</title>
+    </head>
+    <body>
+        <main>
+            <form action="#">
+                <div class="input__container">
+                    <label for="input-day" class="label__input">Day</label>
+                    <input
+                        type="number"
+                        class="input input__day"
+                        id="input-day"
+                        placeholder="DD" />
+                    <label
+                        for="input-day"
+                        class="hidden label__input--invalid"></label>
+                </div>
+
+                <div class="input__container">
+                    <label for="input-month" class="label__input">Month</label>
+                    <input
+                        type="number"
+                        class="input input__month"
+                        id="input-month"
+                        placeholder="MM" />
+                    <label
+                        for="input-day"
+                        class="hidden label__input--invalid"></label>
+                </div>
+
+                <div class="input__container">
+                    <label for="input-year" class="label__input">Year</label>
+                    <input
+                        type="number"
+                        class="input input__year"
+                        id="input-year"
+                        placeholder="YYYY" />
+                    <label
+                        for="input-day"
+                        class="hidden label__input--invalid"></label>
+                </div>
+
+                
+                <button class="btn__submit"><img src="assests/images/icon-arrow.svg"></button>
+                
+            </form>
+
+            <div class="result">
+                <p>
+                    <span class="result__number result__year">--</span> years
+                    <br />
+                    <span class="result__number result__month">--</span> months
+                    <br />
+                    <span class="result__number result__day">--</span> days
+                </p>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 37.5rem;
+        min-width: 32rem;
+        padding: 2rem;
+    }
+
+    form input {
+        max-width: 8rem;
+        font-size: 1.8rem;
+    }
+
+    label{
+        font-size: 1.2rem;
+    }
+
+    .btn__submit{
+        width: 3rem;
+        height: 3rem;
+        top: 11rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .btn__submit img{
+        width: 100%;
+        height: 100%;
+    }
+
+    main::before{
+        top: 13.5rem;
+    }
+
+
+    .result {
+        margin-top: 4rem;
+    }
+}
