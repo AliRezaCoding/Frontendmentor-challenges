@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("assests/fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter-bold";
+    src: url("assests/fonts/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url("assests/fonts/Inter-ExtraBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body{
+    padding: 3rem;
+    background: var(--Off-white);
+}
+
+
+/* LAYOUT */
+
+main {
+    max-width: 99.9rem;
+    margin: auto;
+}
+
+main .container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 2rem;
+}
+
+header {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+aside {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+}
+footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / span 1;
+}
+
+
+header {
+    display: grid;
+    grid-template: repeat(2, 1fr), repeat(2, 1fr);
+    gap: 2rem;
+}
+
+header .img__hot {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+header .title{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+header article {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+/* ====================================== */
+footer {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer article{
+    display: grid;
+    grid-template: 12rem / repeat(3, 1fr);
+}
+
+footer article .img__other {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+footer article .news__body{
+    grid-column: 2/ span 2;
+    grid-row: 1 / span 1;
+}
+
+
+
+/* ==================================== */
+
+/* ELEMENTS */
+p {
+    font-size: 1.5rem;
+    font-family: Inter-Regular;
+}
+a {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+nav menu ul {
+    display: flex;
+}
+
+ul li a{
+    margin-left: 2rem;
+    font-family: Inter-Regular;
+}
+ul li a:hover{
+    color: var(--Soft-red);
+}
+
+
+header .img__hot img{
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-family: Inter-ExtraBold;
+    font-size: 3.6rem;
+    /* width: 100%; */
+}
+
+header article p {
+    text-align: justify;
+}
+
+header article button {
+    background: none;
+    outline: none;
+    border: none;
+    background: var(--Soft-red);
+    color: var(--Off-white);
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: Inter-Regular;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: .3s;
+}
+
+header article button:hover{
+    background: var(--Very-dark-blue);
+}
+
+
+aside {
+    background: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 2rem 1.5rem;
+}
+
+aside h2 {
+    font-family: Inter-Regular;
+    color: var(--Soft-orange);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+aside article{
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+aside article:nth-child(2),
+aside article:nth-child(3) {
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+aside article h3 {
+    font-size: 1.6rem;
+    font-family: Inter-Bold;
+    margin-bottom: .5rem;
+}
+aside article h3 a:hover{
+    color: var(--Soft-orange);
+}
+
+aside article p{
+    color: var(--Dark-grayish-blue);
+}
+
+
+footer article .img__other img{
+    width: 100%;
+    height: 100%;
+}
+
+footer .news__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+}
+
+footer article span {
+    font-size: 2.2rem;
+    font-family: Inter-Regular;
+    color: var(--Grayish-blue);
+}
+
+footer article h3{
+    font-size: 1.4rem;
+    font-family: Inter-Bold;
+}
+footer article p{
+    font-size: 1.4rem;
+    color: var(--Dark-grayish-blue);
+}
