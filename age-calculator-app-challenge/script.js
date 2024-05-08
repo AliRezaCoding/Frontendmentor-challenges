@@ -63,7 +63,8 @@ const validateInputs = function (inputs) {
     }
 
     // For Dates > Current Date (at all);
-    if (new Date(year, month, day) > new Date()) {
+    // Months Are Zero Based
+    if (new Date(year, month - 1, day) > new Date()) {
         displayError("Must be a valid date", inputDay);
         invalidInput();
     }
@@ -77,6 +78,7 @@ const calculateAge = function (dob) {
     const DOB = new Date(dob);
 
     let years = now.getFullYear() - DOB.getFullYear();
+    // .getMonth() Returns Zero Based Month Number
     let months = now.getMonth() - DOB.getMonth();
     let days = now.getDate() - DOB.getDate();
 
@@ -103,9 +105,32 @@ const displayAge = function (age) {
     const resultMonth = document.querySelector(".result__month");
     const resultDay = document.querySelector(".result__day");
 
-    resultYear.textContent = age.years;
-    resultMonth.textContent = age.months;
-    resultDay.textContent = age.days;
+    // Display Age In DOM With Animation
+    resultYear.textContent = "0";
+    resultMonth.textContent = "0";
+    resultDay.textContent = "0";
+
+    const animateYear = () => {
+        let domNum = +resultYear.textContent;
+        age.years > domNum ? domNum++ : clearInterval(intervalYear);
+
+        resultYear.textContent = domNum;
+    };
+    const animateMonth = () => {
+        let domNum = +resultMonth.textContent;
+        age.months > domNum ? domNum++ : clearInterval(intervalMonth);
+
+        resultMonth.textContent = domNum;
+    };
+    const animateDay = () => {
+        let domNum = +resultDay.textContent;
+        age.days > domNum ? domNum++ : clearInterval(intervalDay);
+
+        resultDay.textContent = domNum;
+    };
+    const intervalYear = setInterval(animateYear, 25);
+    const intervalMonth = setInterval(animateMonth, 25);
+    const intervalDay = setInterval(animateDay, 25);
 };
 
 // DISPLAY ERROR IN DOM
@@ -145,9 +170,9 @@ btnSumbitDate.addEventListener("click", function (e) {
 
     if (!validated) return;
 
-    const day = Number(inputDay.value);
-    const month = Number(inputMonth.value);
-    const year = Number(inputYear.value);
+    const day = +inputDay.value;
+    const month = +inputMonth.value;
+    const year = +inputYear.value;
 
     const dateOfBirth = `${year}-${month}-${day}`;
 
