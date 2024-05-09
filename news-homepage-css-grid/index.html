@@ -23,7 +23,18 @@
                     <img src="assests/images/logo.svg" alt="logo" />
                 </div>
 
-                <menu>
+                <div class="overlay close"></div>
+
+                <button class="btn__open--menu">
+                    <img src="assests/images/icon-menu.svg" alt="menu" />
+                </button>
+                <menu class="close">
+                    <button class="btn__close--menu">
+                        <img
+                            src="assests/images/icon-menu-close.svg"
+                            alt="close" />
+                    </button>
+
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">New</a></li>
@@ -75,52 +86,55 @@
                     </article>
                 </aside>
 
-                <footer>
-                    <article>
-                        <div class="img__other">
+                <div class="card__container">
+                    <div class="card">
+                        <div class="img__card">
                             <img
                                 src="assests/images/image-retro-pcs.jpg"
                                 alt="retro pcs" />
                         </div>
-                        <div class="news__body">
+                        <div class="card__body">
                             <span>01</span>
                             <h3>Reviving Retro PCs</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
                             </p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article>
-                        <div class="img__other">
+                    <div class="card">
+                        <div class="img__card">
                             <img
                                 src="assests/images/image-top-laptops.jpg"
                                 alt="laptops" />
                         </div>
-                        <div class="news__body">
+                        <div class="card__body">
                             <span>02</span>
                             <h3>Top 10 Laptops of 2022</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
                             </p>
                         </div>
-                    </article>
-                    
-                    <article>
-                        <div class="img__other">
+                    </div>
+
+                    <div class="card">
+                        <div class="img__card">
                             <img
                                 src="assests/images/image-gaming-growth.jpg"
                                 alt="gaming" />
                         </div>
-                        <div class="news__body">
+                        <div class="card__body">
                             <span>03</span>
                             <h3>The Growth of Gaming</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
                             </p>
                         </div>
-                    </article>
-                </footer>
+                    </div>
+                </div>
             </div>
         </main>
     </body>

@@ -1,7 +1,17 @@
 @media screen and (max-width: 768px) {
+    body{
+        padding: 0;
+    }
+    nav{
+        padding: 0;
+    }
+    nav .logo{
+        margin: 1rem 0;
+    }
     /* LAYOUT */
     main {
-        max-width: 37.5rem;
+        max-width: 375px;
+        position: relative;
     }
 
     main .container {
@@ -16,7 +26,7 @@
         grid-column: 1 / -1;
         grid-row: 2 / span 1;
     }
-    footer {
+    .card__container {
         grid-column: 1 / -1;
         grid-row: 3 / span 1;
     }
@@ -27,8 +37,63 @@
         flex-direction: column;
     }
 
-    footer{
+    .card__container{
         display: flex;
         flex-direction: column;
+    }
+
+
+    /* MENU */
+    .open {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        right: -1px;
+        top: 0;
+        background: var(--Off-white);
+        z-index: 2;
+        transition: all .5s;
+    }
+    .open ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+    .open ul li {
+        margin-top: 1rem;
+        font-family: Inter-Bold;
+    }
+
+    .open .btn__close--menu{
+        all: unset;
+        display: inline;
+        position: fixed;
+        z-index: 999;
+        width: 2.5rem;
+        margin-left: 16rem;
+        top: 1rem;
+        /* right: 1rem; */
+    }
+    .open .btn__close--menu img{
+        width: 100%;
+        height: auto;
+    }
+
+    nav .btn__open--menu {
+        all: unset;
+    }
+
+    .close {
+        display: none;
+    }
+
+
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .3);
+        transition: all .5s;
     }
 }
