@@ -17,8 +17,6 @@ unreadMessages.forEach(message => message.addEventListener('click', markAsRead.b
 
 btnReadAll.addEventListener('click', () => {
     unreadMessages.forEach(message => markAsRead.bind(message)());
-    unread > 0 ? unread-- : unread = 0;
-    unreadCountEl.textContent = unread;
 });
 
 
