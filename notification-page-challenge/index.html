@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script defer src="script.js"></script>
+
+        <title>Notification Page</title>
+    </head>
+    <body>
+        <main>
+            <section class="notifications">
+
+                <div class="noti__title">
+                    <h2>Notifications <span class="noti__count">3</span></h2>
+                    <button class="btn__read--all">Mark all as read</button>
+                </div>
+
+                <!-- UNREAD Notifications -->
+                <div class="noti noti__unread">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-mark-webber.webp" alt="Mark Webber">
+                    </div>
+                    <div class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Mark Webber</span>
+                            reacted to your recent post
+                            <span class="noti__target">My first tournament today!</span>
+                        </p>
+                        <span class="noti__time">1m ago</span>
+                    </div>
+                </div>
+
+                <div class="noti noti__unread">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-angela-gray.webp" alt="Angela Gray">
+                    </div>
+                    <div class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Angela Gray</span>
+                            followed you
+                        </p>
+                        <span class="noti__time">5m ago</span>
+                    </div>
+                </div>
+
+                <div class="noti noti__unread">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+                    </div>
+                    <div class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Jacob Thompson</span>
+                            has joined your <span class="noti__target chess-club">Chess Club</span>
+                        </p>
+                        <span class="noti__time">1 day ago</span>
+                    </div>
+                </div>
+
+                <!-- READ Notifications -->
+                <div class="noti__message">
+                    <div class="noti">
+                        <div class="user__profile">
+                            <img src="assests/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+                        </div>
+                        <div class="noti__body">
+                            <p class="noti__desc noti__message--private">
+                                <span class="user__name">Rizky Hasanuddin</span> 
+                                sent you a private message
+                            </p>
+                            <span class="noti__time">2 days ago</span>
+                        </div>
+                    </div>
+                    <p class="message">
+                        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                    </p>
+                </div>
+                
+
+                <div class="noti">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+                    </div>
+                    <div class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Kimberly Smith</span>
+                            commented on your picture
+                        </p>
+                        <span class="noti__time">1 week ago</span>
+                    </div>
+                </div>
+
+                <div class="noti">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+                    </div>
+                    <div class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Nathan Peterson</span>
+                            reacted to your recent post 
+                            <span class="noti__target">5 end-game strategies to increase your win rate</span>
+                        </p>
+                        <span class="noti__time">2 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="noti">
+                    <div class="user__profile">
+                        <img src="assests/images/avatar-anna-kim.webp" alt="Anna Kim">
+                    </div>
+                    <div  class="noti__body">
+                        <p class="noti__desc">
+                            <span class="user__name">Anna Kim</span>
+                            left the group <span class="noti__target chess-club">Chess Club</span>
+                        </p>
+                        <span class="noti__time">2 weeks ago</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>

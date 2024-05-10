@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'PlusJakartaSansMedium';
+    src: url(assests/fonts/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'PlusJakartaSansExtraBold';
+    src: url(assests/fonts/PlusJakartaSans-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body{
+    background: var(--Very-light-grayish-blue);
+    font-family: PlusJakartaSansMedium;
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--Dark-grayish-blue);
+}
+
+main{
+    padding: 3rem;
+}
+.notifications{
+    display: flex;
+    flex-direction: column;
+    max-width: 76.8rem;
+    margin: auto;
+    background: var(--White);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.noti__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.noti__title h2{
+    font-family: PlusJakartaSansExtraBold;
+    font-size: 1.8rem;
+}
+
+.noti__title .noti__count{
+    margin-left: .5rem;
+    color: var(--White);
+    background: var(--Blue);
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+}
+
+.noti__title .btn__read--all{
+    all: unset;
+    color: var(--Grayish-blue);
+    font-family: PlusJakartaSansExtraBold;
+    font-size: 1.6rem;
+}
+
+.noti__title .btn__read--all:hover{
+    color: var(--Blue);
+}
+
+/* NOTIFICATION Content */
+
+.noti{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: start;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+}
+
+
+.noti .user__profile{
+    width: 4rem;
+}
+
+.noti .user__profile img{
+    width: 4rem;
+    height: auto;
+}
+
+.user__name, .noti__target{
+    font-family: PlusJakartaSansExtraBold;
+    color: var(--Dark-grayish-blue);
+}
+
+.chess-club{
+    color: var(--Blue);
+}
+
+.user__name:hover, .noti__target:hover{
+    color: var(--Blue);
+}
+
+.noti__time{
+    font-size: 1.4rem;
+    color: var(--Grayish-blue);
+}
+
+.noti__message{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message{
+    width: 100%;
+    margin-left: 7rem;
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: .4rem;
+    padding: 1.5rem;
+}
+
+.message:hover{
+    background: var(--Light-grayish-blue-2);
+}
+
+.noti__unread{
+    position: relative;
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.noti__unread::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: var(--Red);
+}
+
+
+@media screen and (max-width: 768px) {
+    main{
+        padding: 0;
+    }
+    .notifications{
+        padding: 1rem;
+    }
+    .noti__title{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
