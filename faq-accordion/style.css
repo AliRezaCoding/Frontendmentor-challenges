@@ -40,7 +40,6 @@ body{
     background: var(--Light-pink);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 body::before{
@@ -55,6 +54,7 @@ body::before{
 
 p{
     font-size: 1.6rem;
+
 }
 
 h1{
@@ -74,8 +74,9 @@ h1{
 }
 
 
-.accordian{
+.accordion{
     position: absolute;
+    top: 10rem;
     z-index: 2;
     background: var(--White);
     width: 47rem;
@@ -83,7 +84,7 @@ h1{
     border-radius: 1rem;
 }
 
-.accordian .title{
+.accordion .title{
     width: 100%;
     display: flex;
     margin-bottom: 1rem;
@@ -99,13 +100,43 @@ h1{
 
 .question{
     padding: 1.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question .icon-plus{
+    margin-left: 1rem;
+    width: 2.6;
 }
 
-.question:hover, .answer{
-    
+.question:hover{
+    color: var(--Grayish-purple);
 }
+
 
 .answer{
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+.show{
+    height: 9rem;
+    width: 100%;
     padding-bottom: 1.8rem;
 }
 
+
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 50%;
+    }
+
+    body::before{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
+
+    .accordion{
+        width: 40rem;
+    }
+}
