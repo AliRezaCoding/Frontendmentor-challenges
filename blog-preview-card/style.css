@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'FigtreeSemiBold';
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'FigtreeExtraBold';
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Yellow);
+}
+
+p,
+span,
+h3 {
+    font-size: 1.6rem;
+    font-family: FigtreeSemiBold;
+}
+
+h2{
+    font-family: FigtreeExtraBold;
+}
+
+
+.card {
+    width: 35rem;
+    background: var(--White);
+    border: 1px solid var(--Black);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: .5rem .5rem 0 var(--Black);
+}
+
+.card:hover{
+    box-shadow: 1rem 1rem 0 var(--Black);
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+}
+
+.card__body {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card__body--label{
+    color: var(--Black);
+    background: var(--Yellow);
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+}
+
+.card__body-date{
+    color: var(--Black);
+    margin-top: 1.5rem;
+}
+
+.card__body--title{
+    font-size: 2.2rem;
+    color: var(--Black);
+    margin: 1.2rem 0;
+}
+
+.card__body--title:hover{
+    color: var(--Yellow);
+}
+
+.card__body--text{
+    color: var(--Grey);
+}
+
+.card__user{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.user__image{
+    width: 4rem;
+}
+.user__image img{
+    width: 100%;
+    height: auto;
+}
+
+.user__name{
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+    font-family: FigtreeExtraBold;
+}
+
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 50%;
+    }
+}
