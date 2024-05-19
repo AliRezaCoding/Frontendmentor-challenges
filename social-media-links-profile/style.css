@@ -1,0 +1,131 @@
+@font-face {
+    font-family: InterRegular;
+    src: url(assests/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterSemiBold;
+    src: url(assests/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(assests/fonts/static/Inter-Bold.ttf);
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Off-Black);
+}
+
+ul {
+    list-style: none;
+    font-family: InterSemiBold;
+}
+
+span {
+    font-family: InterSemiBold;
+}
+
+p {
+    font-family: InterRegular;
+}
+
+.user__name {
+    font-family: InterBold;
+}
+
+.user-profile {
+    background: var(--Dark-Grey);
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.user__image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100vw;
+    overflow: hidden;
+}
+
+.user__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.user__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__name {
+    color: var(--White);
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+}
+
+.user__location {
+    color: var(--Green);
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.user__title {
+    color: var(--White);
+    text-align: center;
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.user__social {
+    margin-top: 1.2rem;
+    color: var(--White);
+}
+
+.user__social li {
+    background: var(--Grey);
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.user__social li:hover {
+    background: var(--Green);
+    color: var(--Off-Black);
+}
+
+.attribution {
+    position: absolute;
+    color: var(--White);
+    bottom: 1rem;
+    font-size: 1.4rem;
+}
