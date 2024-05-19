@@ -19,12 +19,16 @@ Welcome to my repository containing solutions to coding challenges from Frontend
    - **Folder:** [notification-page](/notification-page-challenge)
    - Description: Here, the task was to design a notification page with interactive elements using HTML, CSS, and JavaScript.
 
+4. **Blog Preview Card with HTML and CSS:**
+   - **Live Demo:** [Blog Preview Card](https://blog-preview-card-html-and-css.netlify.app)
+   - **Folder:** [blog-preview-card](/blog-preview-card)
+   - Description: This challenge involves creating a blog preview card using HTML and CSS.
+
+5. **FAQs Accordion with HTML, CSS, and JavaScript:**
+   - **Live Demo:** [FAQs Accordion](https://faq-accordion-html-css-js.netlify.app)
+   - **Folder:** [faq-accordion](/faq-accordion)
+   - Description: This challenge is to build an FAQs accordion with interactive elements using HTML, CSS, and JavaScript.
+
 ## About Frontend Mentor
 
 Frontend Mentor is a platform that provides real-world projects to help you improve your coding skills.
-These projects range in difficulty and cover various aspects of frontend development, including HTML, CSS, and JavaScript.
-By completing challenges, you can enhance your skills, build your portfolio, and even get feedback from the community.
-
-## Contributing
-
-If you'd like to contribute to this repository, feel free to open a pull request. Suggestions, improvements, and feedback are always welcome!
