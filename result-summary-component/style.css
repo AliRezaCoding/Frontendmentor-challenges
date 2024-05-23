@@ -1,0 +1,231 @@
+@font-face {
+    font-family: HankenGroteskMedium;
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: HankenGroteskBold;
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: HankenGroteskExtraBold;
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Primary Backgrounds */
+    --Light-red-bg: hsla(0, 100%, 67%, 0.15);
+    --Orangey-yellow-bg: hsla(39, 100%, 56%, 0.15);
+    --Green-teal-bg: hsla(166, 100%, 37%, 0.15);
+    --Cobalt-blue-bg: hsla(234, 85%, 45%, 0.15);
+
+    /* Gradients */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Natural */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Dark-gray-blue-off: hsla(224, 30%, 27%, .5);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: HankenGroteskMedium;
+}
+h3 {
+    font-size: 2.4rem;
+    font-family: HankenGroteskBold;
+}
+.result__score {
+    font-size: 5.2rem;
+    font-family: HankenGroteskExtraBold;
+    color: var(--White);
+}
+
+.result {
+    width: 70rem;
+    height: 48rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: var(--White);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.result__total {
+    background: linear-gradient(
+        to bottom,
+        var(--Light-slate-blue),
+        var(--Light-royal-blue)
+    );
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 3.5rem;
+}
+
+.result__title {
+    color: var(--Pale-blue);
+}
+
+.result__number--circle {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 100vw;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        var(--Violet-blue),
+        var(--Persian-blue)
+    );
+}
+
+.result__perfect {
+    color: var(--Light-lavender);
+}
+
+.result__status {
+    color: var(--White);
+    margin-top: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.result__comparison {
+    color: var(--Pale-blue);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.result__details {
+    padding: 3rem;
+}
+
+.result__title--dark {
+    color: var(--Dark-gray-blue);
+}
+
+.result__tests {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.result__test {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result__test--reaction {
+    color: var(--Light-red);
+    background: var(--Light-red-bg);
+}
+.result__test--memory {
+    color: var(--Orangey-yellow);
+    background: var(--Orangey-yellow-bg);
+}
+.result__test--verbal {
+    color: var(--Green-teal);
+    background: var(--Green-teal-bg);
+}
+.result__test--visual {
+    color: var(--Cobalt-blue);
+    background: var(--Cobalt-blue-bg);
+}
+
+.result__test .result__score--dark{
+    color: var(--Dark-gray-blue);
+    font-weight: 600;
+    
+}
+
+.result__test .result__perfect--dark{
+    color: var(--Dark-gray-blue-off);
+}
+
+.result__label {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.result__value {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.result__btn{
+    width: 100%;
+    background: var(--Dark-gray-blue);
+    margin-top: 2.5rem;
+    border-radius: 50vw;
+    padding: 1.5rem;
+    color: var(--White);
+    font-family: HankenGroteskMedium;
+    font-size: 1.6rem;
+    letter-spacing: .5px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .result {
+        width: 100%;
+        /* min-height: 100vh; */
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .result__total {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 2.5rem 3.5rem;
+    }
+}
