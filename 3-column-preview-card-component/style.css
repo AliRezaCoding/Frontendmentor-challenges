@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*  (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--Very-light-gray);
+}
+
+/* Temporary */
+body {
+    font-family: sans-serif;
+}
+
+p,
+button {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* LAYOUT */
+
+.card {
+    width: 85rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card__column {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3.5rem;
+}
+
+/* ELEMENTS */
+
+.card__column--sedans {
+    background: var(--Bright-orange);
+}
+
+.card__column--suvs {
+    background: var(--Dark-cyan);
+}
+
+.card__column--luxury {
+    background: var(--Very-dark-cyan);
+}
+
+
+
+.card__title {
+    color: var(--Very-light-gray);
+}
+
+.card__text{
+    color: var(--Transparent-white);
+    letter-spacing: 1px;
+}
+
+.card__btn{
+    border: 1px solid var(--Very-light-gray);
+    outline: none;
+    background: var(--Very-light-gray);
+    letter-spacing: .5px;
+    padding: 1rem .8rem;
+    margin-top: 4rem;
+    border-radius: 50vw;
+    max-width: 65%;
+    transition: .3s;
+}
+
+.card__btn:hover{
+    background: transparent;
+    color: var(--Very-light-gray);
+}
+
+.card__btn--sedans{
+    color: var(--Bright-orange);
+}
+
+.card__btn--suvs{
+    color: var(--Dark-cyan);
+}
+
+.card__btn--luxury{
+    color: var(--Very-dark-cyan);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        max-width: 37.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .card__btn{
+        margin-top: 0;
+        max-width: 50%;
+    }
+}
