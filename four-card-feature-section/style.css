@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.header{
+    text-align: center;
+    max-width: 60rem;
+}
+
+.header__title{
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    font-size: 4.4rem;
+}
+
+.header__title .bold{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+}
+
+.header__text{
+    color: var(--Grayish-Blue);
+    margin-top: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card {
+    width: 30rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 18px 0;
+    border-radius: .5rem;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title{
+    color: var(--Very-Dark-Blue);
+    font-size: 2.2rem;
+}
+
+.card__text{
+    margin-top: 1.5rem;
+    letter-spacing: .5px;
+    color: var(--Grayish-Blue);
+    line-height: 2.3rem;
+}
+
+.card__icon{
+    margin-top: 4rem;
+    align-self: flex-end;
+}
+
+
+
+.card--supervisor {
+    border-top: 0.5rem solid var(--Cyan);
+}
+.card--teambuilder {
+    border-top: 0.5rem solid var(--Red);
+}
+.card--karma {
+    border-top: 0.5rem solid var(--Orange);
+}
+.card--calculator {
+    border-top: 0.5rem solid var(--Blue);
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    body{
+        padding: 2.5rem;
+    }
+
+    .header{
+        width: 30rem;
+    }
+    
+    .header__title{
+        font-size: 2.4rem;
+    }
+}
