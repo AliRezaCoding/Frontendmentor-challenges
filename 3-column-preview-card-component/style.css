@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -29,21 +31,23 @@ body {
     background: var(--Very-light-gray);
 }
 
-/* Temporary */
 body {
-    font-family: sans-serif;
+    font-family: "Big Shoulders Display";
+
 }
 
 p,
 button {
     font-size: 1.5rem;
     font-weight: 400;
+    letter-spacing: .5px;
 }
 
 h2 {
     font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: .5px;
 }
 
 /* LAYOUT */
