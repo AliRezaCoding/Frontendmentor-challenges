@@ -1,0 +1,238 @@
+@font-face {
+    font-family: karlaRegular;
+    src: url(assets/fonts/static/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: karlaBold;
+    src: url(assets/fonts/static/Karla-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Light-Green: hsl(148, 38%, 91%);
+    --Green: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 56%);
+
+    /* Natural */
+    --White: hsl(0, 0%, 100%);
+    --Medium-Grey: hsl(186, 15%, 59%);
+    --Dark-Grey: hsl(187, 24%, 22%);
+    --Light-Grey: hsl(0, 0%, 63%);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--Light-Green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 4rem;
+}
+
+label{
+    font-size: 1.6rem;
+    font-family: karlaRegular;
+}
+
+/* LAYOUT */
+
+.container {
+  width: 75rem;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+    'fn ln'
+    'em em'
+    'qu qu'
+    'ms ms'
+    'ch ch'
+    'bt bt';
+  gap: 1.5rem;
+}
+
+.form__control-firstname {
+  grid-area: fn;
+}
+
+.form__control-lastname {
+  grid-area: ln;
+}
+
+.form__control-email {
+  grid-area: em;
+}
+
+.form__control-queries {
+  grid-area: qu;
+}
+
+.form__queries-label {
+  width: 100%;
+}
+
+.form__control-message {
+  grid-area: ms;
+}
+
+.form__control-checkbox {
+  grid-area: ch;
+}
+
+.form__btn{
+    grid-area: bt;
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__control-queries{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    column-gap: 1.5rem;
+}
+
+.form__queries-label{
+    grid-column: 1 / -1;
+}
+
+.form__query:first-child{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.form__query:last-child{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+
+/* ELEMENTS */
+.container {
+  border-radius: 1rem;
+  padding: 3rem;
+  background: var(--White);
+}
+
+.title{
+    font-family: karlaBold;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.star{
+    color: var(--Green);
+}
+
+.form__input, .form__input-message, .form__query{
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border: 1px solid var(--Light-Grey);
+    border-radius: .5rem;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-family: karlaRegular;
+}
+
+
+.form__input:focus, .form__input-message:focus{
+    border-color: var(--Green);
+}
+
+.form__query{
+    margin-top: 0;
+}
+
+.form__query--selected{
+    background: var(--Light-Green);
+    border-color: var(--Green);
+}
+
+
+.form__input-query, .form__input-checkbox{
+    width: 1.6rem;
+    height: 1.6rem;
+    accent-color: var(--Green);
+}
+
+.form__input-message{
+    height: 10rem;
+    resize: none;
+}
+
+ .label__container{
+    display: flex;
+    align-items: start;
+    gap: 1.2rem;
+}
+
+.form__btn{
+    border: none;
+    outline: none;
+    background: var(--Green);
+    color: var(--White);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+}
+
+
+
+.label--error{
+    color: var(--Red);
+    margin-top: 1rem;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+/* RESPONSIVE & LAYOUT */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        padding: 1.5rem;
+    }
+    .form {
+        display: grid;
+        grid-template-areas:
+          'fn'
+          'ln'
+          'em'
+          'qu'
+          'ms'
+          'ch'
+          'bt';
+        gap: 1.5rem;
+      }
+
+    .form__control-queries{
+        grid-template: auto / 1fr;
+    }
+}

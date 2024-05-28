@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js" defer></script>
+        <title>Frontend Mentor | Contact Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Contact Us</h2>
+            <form class="form" action="#">
+                <div class="form__control-firstname form__control">
+                    <label for="first-name"
+                        >First Name <span class="star">*</span></label
+                    >
+                    <input class="form__input" type="text" id="first-name" />
+                    <label class="label--error" for="first-name"></label>
+                </div>
+                <div class="form__control-lastname form__control">
+                    <label for="last-name"
+                        >Last Name <span class="star">*</span></label
+                    >
+                    <input class="form__input" type="text" id="last-name" />
+                    <label class="label--error" for="last-name"></label>
+                </div>
+
+                <div class="form__control-email form__control">
+                    <label for="email-address"
+                        >Email Address <span class="star">*</span></label
+                    >
+                    <input
+                        class="form__input form__input-email"
+                        type="email"
+                        id="email-address" />
+                    <label class="label--error" for="email-address"></label>
+                </div>
+
+                <div class="form__queries form__control-queries">
+                    <label class="form__queries-label" for=""
+                        >Query Type <span class="star">*</span></label
+                    >
+
+                    <div class="form__query">
+                        <label class="label__container" for="query--1">
+                            <input
+                                class="form__input-query"
+                                type="radio"
+                                name="query"
+                                value="general enquiry"
+                                id="query--1" />
+                            General Enquiry</label
+                        >
+                    </div>
+
+                    <div class="form__query">
+                        <label class="label__container" for="query--2">
+                            <input
+                                class="form__input-query"
+                                type="radio"
+                                name="query"
+                                value="support request"
+                                id="query--2" />
+                            Support Request</label
+                        >
+                    </div>
+
+                    <label
+                        class="form__queries-label label--error"
+                        for=""></label>
+                </div>
+
+                <div class="form__control-message form__control">
+                    <label for="message-area"
+                        >Message <span class="star">*</span></label
+                    >
+                    <textarea
+                        class="form__input form__input-message"
+                        name="message"
+                        id="message-area"></textarea>
+                    <label class="label--error" for="message-area"></label>
+                </div>
+
+                <div class="form__control-checkbox form__control">
+                    <label class="label__container" for="contact-me">
+                        <input
+                            class="form__input-checkbox"
+                            type="checkbox"
+                            id="contact-me" />
+                        I consent to being contacted by the team
+                        <span class="star">*</span></label
+                    >
+                    <label class="label--error" for="contact-me"></label>
+                </div>
+
+                <button class="form__btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
