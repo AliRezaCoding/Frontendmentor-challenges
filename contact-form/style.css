@@ -32,12 +32,13 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   background: var(--Light-Green);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem 4rem;
+  padding: 10rem 4rem;
 }
 
 label{
@@ -192,8 +193,6 @@ label{
     margin-top: 1.5rem;
 }
 
-
-
 .label--error{
     color: var(--Red);
     margin-top: 1rem;
@@ -202,6 +201,57 @@ label{
 
 .show{
     display: block;
+}
+
+.success-message{
+  position: absolute;
+  height: 8rem;
+  width: auto;
+  top: 0;
+  background: var(--Dark-Grey);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.8rem 1.5rem;
+  transform: translateY(-5rem);
+  display: none;
+}
+
+@keyframes getDown {
+  0%{
+    transform: translateY(-5rem);
+  }
+  100%{
+    transform: translateY(2rem);
+  }
+}
+
+.display-message{
+  animation: getDown .3s forwards;
+  display: block;
+}
+
+.success-message h3{
+  color: var(--White);
+  font-family: karlaRegular;
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.success-message h3 img{
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: .5rem;
+}
+
+.success-message span{
+  font-size: 1.4rem;
+  color: var(--Light-Green);
+  font-family: karlaRegular;
+  margin-top: 1rem;
 }
 
 

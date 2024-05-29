@@ -4,30 +4,25 @@ const form = document.querySelector('.form');
 const inputCheckbox = document.querySelector('.form__input-checkbox');
 const inputEmail = document.querySelector('.form__input-email');
 const queryInputs = document.querySelectorAll('.form__input-query');
-const otherInputs = document.querySelectorAll('.form__input');
-
+const textInputs = document.querySelectorAll('.form__input');
+const successMessage = document.querySelector('.success-message');
 //////////////////////////////
 
 // Error Labels
-const errLabelQuery = document.querySelector(
-    '.form__control-queries'
-).lastElementChild;
-const errLabelCheckbox =
-    inputCheckbox.closest('.label__container').nextElementSibling;
+const errLabelQuery = document.querySelector('.form__control-queries').lastElementChild;
+const errLabelCheckbox = inputCheckbox.closest('.label__container').nextElementSibling;
 
 // Error Messages
 const errMessageInput = 'This field is required';
 const errMessageQuery = 'Please select a query type';
-const errMessageCheckbox =
-    'To submit this form, please consent to being contacted';
+const errMessageCheckbox = 'To submit this form, please consent to being contacted';
 const errMessageEmail = 'Please enter a valid email address';
 
 ///////////////////////////////
 
 const removeNearestErr = function (target) {
     const nearestErrContainer =
-        target.closest('.form__control') ||
-        target.closest('.form__control-queries');
+        target.closest('.form__control') || target.closest('.form__control-queries');
 
     if (!nearestErrContainer) return;
 
@@ -41,14 +36,14 @@ form.addEventListener('submit', function (e) {
     let validated = true;
     const selectedQuery = document.querySelector('.form__input-query:checked');
 
-    otherInputs.forEach(input => {
-        const errInput = input.nextElementSibling;
+    textInputs.forEach(input => {
+        const errLabel = input.nextElementSibling;
         if (!input.value) {
             validated = false;
-            errInput.textContent = errMessageInput;
-            errInput.classList.add('show');
+            errLabel.textContent = errMessageInput;
+            errLabel.classList.add('show');
         } else {
-            errInput.classList.remove('show');
+            errLabel.classList.remove('show');
         }
     });
 
@@ -67,9 +62,21 @@ form.addEventListener('submit', function (e) {
     } else {
         errLabelCheckbox.classList.remove('show');
     }
+
+
+    if(!validated) return;
+
+    // display success message and Set timeout
+    successMessage.classList.add('display-message');
+    setTimeout(() => {
+        successMessage.classList.remove('display-message');
+    }, 3000);
+
+    document.body.scrollIntoView({behavior: 'smooth'});
 });
 
 form.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') return;
     removeNearestErr(e.target);
 });
 
@@ -80,9 +87,7 @@ inputCheckbox.addEventListener('change', function (e) {
 inputEmail.addEventListener('invalid', function (e) {
     e.preventDefault();
 
-    const errLabel = e.target
-        .closest('.form__control')
-        .querySelector('.label--error');
+    const errLabel = e.target.closest('.form__control').querySelector('.label--error');
 
     errLabel.textContent = errMessageEmail;
     errLabel.classList.add('show');
@@ -92,9 +97,7 @@ inputEmail.addEventListener('invalid', function (e) {
 queryInputs.forEach(input => {
     input.addEventListener('change', function (e) {
         queryInputs.forEach(inp =>
-            inp
-                .closest('.form__query')
-                .classList.remove('form__query--selected')
+            inp.closest('.form__query').classList.remove('form__query--selected')
         );
 
         this.closest('.form__query').classList.add('form__query--selected');
