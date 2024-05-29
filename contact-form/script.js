@@ -66,6 +66,16 @@ form.addEventListener('submit', function (e) {
 
     if(!validated) return;
 
+
+    // Clear Input Fields
+    queryInputs.forEach(input => {
+        input.checked = false;
+        input.closest('.form__query').classList.remove('form__query--selected');
+    });
+
+    textInputs.forEach(input => input.value = '');
+    inputCheckbox.checked = false;
+
     // display success message and Set timeout
     successMessage.classList.add('display-message');
     setTimeout(() => {

@@ -285,4 +285,12 @@ label{
     .form__control-queries{
         grid-template: auto / 1fr;
     }
+
+    .form__query{
+      margin-top: 1.5rem;
+    }
+
+    .success-message span{
+      margin-top: 1.5rem;
+    }
 }
