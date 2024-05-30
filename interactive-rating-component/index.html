@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js" defer></script>
+
+        <title>Frontend Mentor | Interactive card Component</title>
+    </head>
+    <body>
+        <div class="card rating-card">
+            <div class="card__icon">
+                <img src="images/icon-star.svg" alt="Icon" />
+            </div>
+
+            <h3 class="card__title">How did we do?</h3>
+
+            <p class="card__text">
+                Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!
+            </p>
+
+            <ul class="card__options">
+                <li class="card__number">1</li>
+                <li class="card__number">2</li>
+                <li class="card__number">3</li>
+                <li class="card__number">4</li>
+                <li class="card__number">5</li>
+            </ul>
+
+            <button class="card__btn">submit</button>
+        </div>
+
+        <div class="card message-card hidden">
+            <div class="card__banner">
+                <img src="images/illustration-thank-you.svg" alt="Icon">
+            </div>
+
+            <div class="card__sub-title">
+                <p>You selected <span class="selected-number">4</span> out of 5</p>
+            </div>
+
+            <h3 class="card__title">Thank you</h3>
+
+            <p class="card__text">
+                We appreciate you taking the time to give a rating.
+                If you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+    </body>
+</html>
