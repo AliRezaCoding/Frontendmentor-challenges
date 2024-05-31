@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js" defer></script>
+        <title>Frontend Mentor | Tip Calculator App</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </div>
+        </header>
+
+        <main class="app">
+            <section class="calculator">
+                <form class="form">
+                    <fieldset class="form__bill">
+                        <legend class="form__title">Bill</legend>
+                        <input
+                            type="number"
+                            class="form__input form__input--bill"
+                            placeholder="0" />
+                    </fieldset>
+
+                    <fieldset class="form__tip">
+                        <legend class="form__title">Select Tip %</legend>
+
+                        <div class="form__options">
+                            <input
+                                type="radio"
+                                name="tip"
+                                id="tip--1"
+                                value="0.05"
+                                class="form__option-value" />
+                            <label class="form__option" for="tip--1">5%</label>
+
+                            <input
+                                type="radio"
+                                name="tip"
+                                id="tip--2"
+                                value="0.1"
+                                class="form__option-value" />
+                            <label class="form__option" for="tip--2">10%</label>
+
+                            <input
+                                type="radio"
+                                name="tip"
+                                id="tip--3"
+                                value="0.15"
+                                class="form__option-value" />
+                            <label class="form__option" for="tip--3">15%</label>
+
+                            <input
+                                type="radio"
+                                name="tip"
+                                id="tip--4"
+                                value="0.25"
+                                class="form__option-value" />
+                            <label class="form__option" for="tip--4">25%</label>
+
+                            <input
+                                type="radio"
+                                name="tip"
+                                id="tip--5"
+                                value="0.5"
+                                class="form__option-value" />
+                            <label class="form__option" for="tip--5">50%</label>
+
+                            <input
+                                type="number"
+                                class="form__option-custom"
+                                placeholder="Custom" />
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form__people">
+                        <legend class="form__title">Number of People</legend>
+                        <input
+                            type="number"
+                            class="form__input form__input--people"
+                            placeholder="0" />
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="result">
+                <div>
+                    <div class="result__tip">
+                        <div>
+                            <span class="result__label"> Tip Amount</span>
+                            <br />
+                            <span class="result__label--per"> / person </span>
+                        </div>
+                        <h3 class="result__value result__value-amount">$0.00</h3>
+                    </div>
+                    <div class="result__tip">
+                        <div>
+                            <span class="result__label"> Total</span>
+                            <br />
+                            <span class="result__label--per"> / person </span>
+                        </div>
+                        <h3 class="result__value result__value-total">$0.00</h3>
+                    </div>
+                </div>
+
+                <button class="btn--reset">reset</button>
+            </section>
+        </main>
+    </body>
+</html>
