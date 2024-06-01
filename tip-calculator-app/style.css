@@ -124,6 +124,23 @@ input::placeholder{
     color: var(--Very-dark-cyan);
 }
 
+.label--error{
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    color: red;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.input--error:focus{
+    border-color: red;
+}
+
+.show{
+    display: block;
+}
+
 .form__options{
     width: 100%;
     display: grid;
@@ -139,6 +156,16 @@ input::placeholder{
     color: var(--White);
     border-radius: .5rem;
     text-align: center;
+}
+
+.form__option--hover{
+    background: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.form__option--selected{
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
 }
 
 .form__option-value{
@@ -184,9 +211,18 @@ input::placeholder{
     color: var(--Very-dark-cyan);
     padding: 1.2rem;
     font-size: 1.6rem;
+    border-radius: .5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+}
+
+.btn--reset:hover{
+    background: var(--Light-grayish-cyan);
+}
+
+.btn--reset:disabled{
+    background: var(--Dark-grayish-cyan);
 }
 
 @media screen and (max-width: 992px) {

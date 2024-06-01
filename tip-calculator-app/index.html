@@ -23,7 +23,8 @@
                         <input
                             type="number"
                             class="form__input form__input--bill"
-                            placeholder="0" />
+                            placeholder="0"
+                            min="0" />
                     </fieldset>
 
                     <fieldset class="form__tip">
@@ -82,7 +83,13 @@
                         <input
                             type="number"
                             class="form__input form__input--people"
-                            placeholder="0" />
+                            placeholder="0"
+                            value="1"
+                            min="0"
+                            id="input--people" />
+                        <label class="label--error" for="input--people"
+                            >Can't be zero</label
+                        >
                     </fieldset>
                 </form>
             </section>
@@ -95,7 +102,9 @@
                             <br />
                             <span class="result__label--per"> / person </span>
                         </div>
-                        <h3 class="result__value result__value-amount">$0.00</h3>
+                        <h3 class="result__value">
+                            $<span class="result__value-amount">0.00</span>
+                        </h3>
                     </div>
                     <div class="result__tip">
                         <div>
@@ -103,11 +112,13 @@
                             <br />
                             <span class="result__label--per"> / person </span>
                         </div>
-                        <h3 class="result__value result__value-total">$0.00</h3>
+                        <h3 class="result__value">
+                            $<span class="result__value-total">0.00</span>
+                        </h3>
                     </div>
                 </div>
 
-                <button class="btn--reset">reset</button>
+                <button class="btn--reset" disabled>reset</button>
             </section>
         </main>
     </body>
