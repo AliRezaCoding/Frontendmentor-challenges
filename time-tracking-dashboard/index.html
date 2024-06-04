@@ -1,178 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon" />
 
-    <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css" />
 
-    <script defer src="src/script/script.js"></script>
+        <script defer src="src/script/script.js"></script>
 
-    <title>Frontend Mentor | Time Tracking Dashboard</title>
-</head>
-<body>
-    <main class="main">
-        <aside class="profile">
-            <div class="profile__details">
-                <div class="profile__picture">
-                    <img src="images/image-jeremy.png" alt="Profile Picture" class="picture">
+        <title>Frontend Mentor | Time Tracking Dashboard</title>
+    </head>
+    <body>
+        <main class="main">
+            <aside class="profile">
+                <div class="profile__details">
+                    <div class="profile__picture">
+                        <img
+                            src="images/image-jeremy.png"
+                            alt="Profile Picture"
+                            class="picture" />
+                    </div>
+                    <div>
+                        <p class="profile__subject">Report for</p>
+                        <p class="profile__name">Jeremy Robson</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="profile__subject">
-                        Report for
-                    </p>
-                    <p class="profile__name">
-                        Jeremy Robson
-                    </p>
+                <menu class="profile__activities">
+                    <ul class="list profile__activities-list">
+                        <li class="profile__activity">
+                            <a
+                                href="#"
+                                class="profile__link"
+                                data-timeframe="daily"
+                                >Daily</a
+                            >
+                        </li>
+                        <li class="profile__activity">
+                            <a
+                                href="#"
+                                class="profile__link"
+                                data-timeframe="weekly"
+                                >Weekly</a
+                            >
+                        </li>
+                        <li class="profile__activity">
+                            <a
+                                href="#"
+                                class="profile__link"
+                                data-timeframe="monthly"
+                                >Monthly</a
+                            >
+                        </li>
+                    </ul>
+                </menu>
+            </aside>
+            <div class="card card--work">
+                <div class="card__icon">
+                    <img src="images/icon-work.svg" alt="Icon Work" />
                 </div>
-            </div>
-            <menu class="profile__activities">
-                <ul class="list">
-                    <li class="profile__activity">Daily</li>
-                    <li class="profile__activity">Weekly</li>
-                    <li class="profile__activity">Monthly</li>
-                </ul>
-            </menu>
-        </aside>
-        <div class="card card--work">
-            <div class="card__icon">
-                <img src="images/icon-work.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Work
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
-                </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="card card--play">
-            <div class="card__icon">
-                <img src="images/icon-play.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Play
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
-                </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Work</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card card--study">
-            <div class="card__icon">
-                <img src="images/icon-study.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Study
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
+            <div class="card card--play">
+                <div class="card__icon">
+                    <img src="images/icon-play.svg" alt="Icon Work" />
                 </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Play</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card card--exercise">
-            <div class="card__icon">
-                <img src="images/icon-exercise.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Exercise
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
+            <div class="card card--study">
+                <div class="card__icon">
+                    <img src="images/icon-study.svg" alt="Icon Work" />
                 </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Study</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card card--social">
-            <div class="card__icon">
-                <img src="images/icon-social.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Social
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
+            <div class="card card--exercise">
+                <div class="card__icon">
+                    <img src="images/icon-exercise.svg" alt="Icon Work" />
                 </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Exercise</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card card--self-care">
-            <div class="card__icon">
-                <img src="images/icon-self-care.svg" alt="Icon Work">
-            </div>
-            <div class="card__content">
-                <div class="card__header">
-                    <h2 class="card__title">
-                        Self Care
-                    </h2>
-                    <button class="btn--details">
-                        <img src="images/icon-ellipsis.svg" alt="Icon Details">
-                    </button>
+            <div class="card card--social">
+                <div class="card__icon">
+                    <img src="images/icon-social.svg" alt="Icon Work" />
                 </div>
-                <div class="card__activity">
-                    <p class="card__current">
-                        32hrs
-                    </p>
-                    <p class="card__previous">
-                        Last week - 36hrs
-                    </p>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Social</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-</body>
+            <div class="card card--self-care">
+                <div class="card__icon">
+                    <img src="images/icon-self-care.svg" alt="Icon Work" />
+                </div>
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2 class="card__title">Self Care</h2>
+                        <button class="btn--details">
+                            <img
+                                src="images/icon-ellipsis.svg"
+                                alt="Icon Details" />
+                        </button>
+                    </div>
+                    <div class="card__activity">
+                        <p class="card__current">hrs</p>
+                        <p class="card__previous">Last week - hrs</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

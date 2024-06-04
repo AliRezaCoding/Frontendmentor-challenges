@@ -66,6 +66,11 @@ body {
 
 /* ELEMENTS */
 
+a{
+    text-decoration: none;
+    all: inherit;
+}
+
 ul {
     list-style: none;
 }
@@ -129,6 +134,10 @@ ul {
 }
 
 .profile__activity:hover {
+    color: var(--White);
+}
+
+.link--active{
     color: var(--White);
 }
 
