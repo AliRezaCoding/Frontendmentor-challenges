@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -35,10 +37,12 @@ html {
 
     --Padding-first: 2.2rem;
     --Padding-first-small: 1.6rem;
+
+    --Font-family-rubik: "Rubik", sans-serif;
 }
 
 body {
-    font-family: system-ui;
+    font-family: var(--Font-family-rubik);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -131,6 +135,7 @@ ul {
 .profile__activity {
     color: var(--Pale-Blue);
     font-size: var(--Font-size-third);
+    cursor: pointer;
 }
 
 .profile__activity:hover {

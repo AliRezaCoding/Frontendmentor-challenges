@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +20,12 @@ html {
     --Dark-Blue: hsl(213, 19%, 18%);
     --Dark-Blue-Alpha: hsl(219, 16%, 28%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --Font-family-overpass: "Overpass";
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--Font-family-overpass);
     min-height: 100vh;
     background: var(--Very-Dark-Blue);
     display: flex;
@@ -92,7 +96,7 @@ li {
     justify-content: center;
     align-items: center;
     border-radius: 100vw;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
 }
 
