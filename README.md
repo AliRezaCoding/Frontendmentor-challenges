@@ -71,5 +71,6 @@ Welcome to my repository containing solutions to coding challenges from Frontend
 
 ## About Frontend Mentor
 
+Thanks to Frontend Mentor [View  Their Web Site](https://www.frontendmentor.io).
+
 Frontend Mentor is a platform that provides real-world projects to help you improve your coding skills.
-Thanks to Frontend Mentor [View Site](frontendmentor.io)
