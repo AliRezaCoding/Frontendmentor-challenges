@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js" defer></script>
+
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <header class="header">
+            <nav class="nav">
+                <img class="nav__logo" src="images/logo.svg" alt="Logo" />
+
+                <menu class="nav__menu nav__menu--fixed nav__menu--close">
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Features</a>
+                            <img
+                                class="nav__link-arrow"
+                                src="images/icon-arrow-down.svg"
+                                alt="Icon"
+                                data-icon-arrow-up="images/icon-arrow-up.svg"
+                                data-icon-arrow-down="images/icon-arrow-down.svg" />
+
+                            <!-- <ul class="nav__submenu">
+                                    <li class="nav__item">
+                                        <img
+                                            class="nav__icon"
+                                            src="images/icon-todo.svg"
+                                            alt="Icon" />
+        
+                                        <a class="nav__link" href="#">Todo List</a>
+                                    </li>
+                                </ul> -->
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Company</a>
+                            <img
+                                class="nav__link-arrow"
+                                src="images/icon-arrow-down.svg"
+                                alt="Icon"
+                                data-icon-arrow-up="images/icon-arrow-up.svg"
+                                data-icon-arrow-down="images/icon-arrow-down.svg" />
+
+                            <!-- <ul class="nav__submenu">
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">History</a>
+                                    </li>
+                                </ul> -->
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Career</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">About</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__btns">
+                        <button class="nav__btn nav__btn--login">Login</button>
+                        <button class="nav__btn nav__btn--register">
+                            Register
+                        </button>
+                    </div>
+                </menu>
+
+                <div class="nav__icon-menu">
+                    
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>
