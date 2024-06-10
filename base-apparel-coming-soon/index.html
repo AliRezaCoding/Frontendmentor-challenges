@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js" defer></script>
+
+        <title>Frontend Mentor | Base apparel coming soon</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </div>
+            <div class="header__title">
+                <h1>
+                    <span class="red">we're</span>
+                    <br />
+                    coming
+                    <br />
+                    soon
+                </h1>
+
+                <p>
+                    Hello fellow shoppers! We're currently building our new
+                    fashion store. Add your email below to stay up-to-date with
+                    announcements and our launch deals.
+                </p>
+
+                <form class="form">
+                    <input
+                        class="form__input form__input-email"
+                        type="email"
+                        id="input--email"
+                        placeholder="Email Address"
+                        required />
+                    <button class="form__btn" type="submit">
+                        <img
+                            class="icon__arrow icon"
+                            src="images/icon-arrow.svg"
+                            alt="Submit" />
+                    </button>
+                    <img
+                        class="icon__error icon hidden"
+                        src="images/icon-error.svg"
+                        alt="Error" />
+                    <label class="label--error hidden" for="input--email"
+                        >Please provide a valid email</label
+                    >
+                </form>
+            </div>
+            <div class="header__image"></div>
+        </header>
+    </body>
+</html>
