@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,10 +26,10 @@ html {
 }
 
 body {
+    font-family: "Epilogue", sans-serif;;
     position: relative;
     min-height: 100vh;
     background: var(--Almost-White);
-    font-family: system-ui;
 }
 
 ul {
@@ -209,15 +211,13 @@ p {
     visibility: hidden;
     overflow: hidden;
     height: 0;
-    /* Dropdown Animation */
-    transform: translateY(-3rem);
     opacity: 0;
-    transition: 300ms all linear;
+    transition: opacity 300ms linear;
 }
 
 .nav__submenu-features {
     right: 0.5rem;
-    width: 14rem;
+    width: 14.5rem;
 }
 
 .nav__icon {
@@ -229,8 +229,8 @@ p {
     padding: 1.5rem;
     height: auto;
     visibility: visible;
-    transform: translateY(0);
     opacity: 1;
+    transition: opacity 300ms linear;
 }
 
 /* Responsive */
@@ -267,24 +267,26 @@ p {
     /* Menu & Submenu & Icon close|open menu */
     .nav {
         padding: 1.5rem;
+        overflow: hidden;
     }
     .nav__menu--fixed {
         position: fixed;
         height: 100vh;
+        width: 50%;
         right: 0;
         top: 0;
         flex-direction: column;
         justify-content: flex-start;
         background: var(--Almost-White);
         z-index: 2;
-        transition: width 300ms linear;
-        width: 0;
+        transform: translateX(100%);
+        transition: all 300ms linear;
         overflow: hidden;
     }
 
     .nav__menu--open {
+        transform: translateX(0);
         padding: 1.5rem;
-        width: 50%;
     }
 
     .nav__links {
