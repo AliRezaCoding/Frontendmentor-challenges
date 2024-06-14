@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
     /* ### Primary */
 
@@ -43,7 +45,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     min-height: 100vh;
     background: url(images/bg-pattern-desktop.svg);
 }
