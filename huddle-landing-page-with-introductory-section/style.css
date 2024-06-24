@@ -1,0 +1,144 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --White: hsl(0, 0%, 99%);
+
+    --Clr-Box-Shadow-Btn: hsla(0, 0%, 0%, 0.322);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Violet);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3.2rem;
+
+    padding: 4rem;
+}
+
+.logo {
+    grid-column: 1 / -1;
+}
+
+.header__image {
+    margin-top: 4rem;
+}
+
+.header__image img {
+    width: 100%;
+    height: auto;
+}
+
+.header__title {
+    padding-right: 10rem;
+    margin-top: 8rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: var(--White);
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--White);
+    opacity: 85%;
+    margin-top: 2.4rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 15.6rem;
+    background: var(--White);
+    color: var(--Violet);
+    border-radius: 50vw;
+    box-shadow: 3px 7px 10px var(--Clr-Box-Shadow-Btn);
+    padding: 1.4rem;
+    margin-top: 2.4rem;
+}
+
+button:hover {
+    background: var(--Soft-Magenta);
+    color: var(--White);
+}
+
+.icons {
+    grid-column: 1 / -1;
+    justify-self: end;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    color: var(--White);
+    font-size: 1.8rem;
+    margin: .7rem;
+    padding-top: .7rem;
+}
+
+@media screen and (max-width: 992px){
+    .main{
+        background-image: url(images/bg-mobile.svg);
+    }
+    .header{
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .logo,
+    .header__image,
+    .header__title,
+    .icons{
+        grid-column: 1 / -1;
+    }
+
+    .logo img{
+        width: 50%;
+        height: auto;
+    }
+
+    .header__image{
+        margin-top: 1rem;
+    }
+
+    .header__title{
+        text-align: center;
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+}
