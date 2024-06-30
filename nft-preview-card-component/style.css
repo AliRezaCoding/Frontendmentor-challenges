@@ -1,0 +1,125 @@
+
+:root{
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan-transparent: hsla(178, 100%, 50%, 0.5);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: system-ui;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Very-dark-blue-main-BG);
+}
+
+.card {
+    background: white;
+    width: 35rem;
+    height: auto;
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 15px;
+    padding: 1.8rem;
+}
+.card__image {
+    position: relative;
+}
+.card__image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.card__image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Cyan-transparent);
+    border-radius: 8px;
+    display: none;
+}
+.card__image:hover .card__image-overlay{
+    display: flex;
+}
+.card__body {
+    color: var(--Soft-blue);
+}
+.card__body h3 {
+    color: var(--White);
+    margin-top: 1.5rem;
+}
+.card__body p{
+    margin-top: 1.5rem;
+}
+.card__pricing {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.card__pricing span {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.card__pricing-price {
+    font-weight: 600;
+    color: var(--Cyan);
+}
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+.card__author-image {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.card__author-image img {
+    max-width: 100%;
+    height: auto;
+}
+.card__author-name {
+    font-weight: 400;
+}
+.name{
+    color: var(--White);
+}
+.name:hover, 
+h3:hover {
+    color: var(--Cyan);
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
