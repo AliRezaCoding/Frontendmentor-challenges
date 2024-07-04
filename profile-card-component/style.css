@@ -1,0 +1,150 @@
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: system-ui;
+    font-size: 1.8rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+.profile{
+    position: relative;
+    width: 37rem;
+    height: 39rem;
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.profile::before,
+.profile::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.profile::before{
+    top: 0;
+    left: 0;
+    transform: translate(-85%, -65%);
+    background-image: url(images/bg-pattern-top.svg);
+}
+
+.profile::after{
+    bottom: 0;
+    right: 0;
+    transform: translate(85%, 65%);
+    background-image: url(images/bg-pattern-bottom.svg);
+}
+
+.profile__cover{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 38%;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.profile__info{
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    width: 100%;
+}
+
+.profile__details{
+    text-align: center;
+}
+
+.profile__details img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid var(--White);
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.profile__details h3{
+    margin-top: 1.5rem;
+}
+
+.age {
+    font-weight: 500;
+}
+
+.profile__details > span{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.profile__details span {
+    color: var(--Dark-gray);
+}
+
+.profile__details {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+
+.profile__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+
+}
+
+.profile__social div {
+    text-align: center;
+}
+
+.profile__social h4 {
+
+}
+
+.profile__social span {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--Dark-gray);
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
