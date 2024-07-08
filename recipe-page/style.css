@@ -1,0 +1,126 @@
+
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background-color: var(--Eggshell);
+    padding: 6rem 1.6rem;
+}
+
+
+
+
+.main {
+    max-width: 55%;
+    margin: 0 auto;
+    background: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 3.2rem;
+}
+.header,
+.section{
+    width: 100%;
+}
+.section{
+    margin-top: 2.2rem;
+}
+.ingredients,
+.instructions{
+    border-bottom: 1px solid var(--Light-Grey);
+    padding-bottom: 3.2rem;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 4.2rem;
+    margin-top: 1.8rem;
+}
+p {
+    margin-top: 1.8rem;
+}
+.preparation {
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+    margin-top: 1.8rem;
+    padding: 2.2rem;
+}
+h3 {
+    font-size: 2.2rem;
+    color: var(--Dark-Raspberry);
+}
+ul, ol {
+    margin-left: 2.2rem;
+    margin-top: 1.8rem;
+}
+li {
+    padding-left: 1.2rem;
+    margin-top: 8px;
+}
+span {}
+.bold {
+    font-weight: 700;
+}
+h2 {
+    font-size: 3.2rem;
+    color: var(--Nutmeg);
+}
+
+.nutrition__table{
+    margin-top: 1.8rem;
+}
+.row {
+    display: flex;
+    padding: 1.8rem;
+}
+.row:not(:last-child){
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.column {
+    flex-basis: 50%;
+}
+.nutrition__name {}
+.nutrition__value {
+    color: var(--Dark-Raspberry);
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+    body{
+        padding: 0;
+    }
+    .main{
+        max-width: 100%;
+        border-radius: 0;
+        padding: 1.6rem;
+    }
+}
