@@ -69,8 +69,38 @@ Welcome to my repository containing solutions to coding challenges from Frontend
     - **Folder:** [3-column-preview-card-component](/3-column-preview-card-component)
     - Description: This challenge involves creating a responsive three-column preview card component using HTML and CSS.
 
+14. **Intro Section with Dropdown Navigation:**
+    - **Live Demo:** [Intro Section with Dropdown Navigation](https://introsectiondropdownnavigation.netlify.app)
+    - **Folder:** [intro-section-with-dropdown-navigation](/intro-section-with-dropdown-navigation)
+    - Description: This project is built with HTML, CSS, and JavaScript, featuring dropdown menus and a sidebar menu.
+
+15. **Product Preview Card Component:**
+    - **Live Demo:** [Product Preview Card Component](https://productpreviewcardcomponenthtmlcss.netlify.app)
+    - **Folder:** [product-preview-card-component](/product-preview-card-component)
+    - Description: This project is built with HTML and CSS, showcasing an optimal layout for product previews.
+
+16. **Base Apparel Coming Soon Page:**
+    - **Live Demo:** [Base Apparel Coming Soon Page](https://baseapparelcomingsoon.netlify.app)
+    - **Folder:** [base-apparel-coming-soon](/base-apparel-coming-soon)
+    - Description: This project involves creating a coming soon page for Base Apparel using HTML and CSS.
+
+17. **Stats Preview Card Component:**
+    - **Live Demo:** [Stats Preview Card Component](https://statspreviewcardcomponenthtmlcss.netlify.app)
+    - **Folder:** [stats-preview-card-component](/stats-preview-card-component)
+    - Description: This challenge involves creating a stats preview card component to display key statistics in an engaging and visually appealing manner.
+
+18. **Social Proof Section:**
+    - **Live Demo:** [Social Proof Section](https://socialproofsectionhtmlcss.netlify.app)
+    - **Folder:** [social-proof-section](/social-proof-section)
+    - Description: This challenge is about designing a social proof section that showcases testimonials and reviews in a structured layout.
+
+19. **Single Price Grid Component:**
+    - **Live Demo:** [Single Price Grid Component](https://singlepricegridcomponenthtmlcss.netlify.app)
+    - **Folder:** [single-price-grid-component](/single-price-grid-component)
+    - Description: This project involves creating a single price grid component using HTML and CSS to display pricing options in a clean and simple layout.
+
 ## About Frontend Mentor
 
-Thanks to Frontend Mentor [View  Their Web Site](https://www.frontendmentor.io).
+Thanks to Frontend Mentor [View Their Web Site](https://www.frontendmentor.io).
 
 Frontend Mentor is a platform that provides real-world projects to help you improve your coding skills.
