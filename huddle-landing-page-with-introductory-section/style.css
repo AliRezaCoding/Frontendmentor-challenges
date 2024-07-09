@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     --Violet: hsl(257, 40%, 49%);
     --Soft-Magenta: hsl(300, 69%, 71%);
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-    font-family: system-ui;
+    font-family: "Open Sans", sans-serif;   
     min-height: 100vh;
 }
 
@@ -93,18 +95,23 @@ button:hover {
 .icons {
     grid-column: 1 / -1;
     justify-self: end;
+    display: flex;
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
-    text-align: center;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--White);
     border-radius: 50%;
     color: var(--White);
-    font-size: 1.8rem;
     margin: .7rem;
-    padding-top: .7rem;
+}
+.icon:hover{
+    color: var(--Soft-Magenta);
 }
 
 @media screen and (max-width: 992px){
@@ -140,5 +147,8 @@ button:hover {
 
     h1{
         font-size: 2.8rem;
+    }
+    .icons{
+        justify-self: center;
     }
 }
