@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-:root{
-
+:root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
     --Cyan-transparent: hsla(178, 100%, 50%, 0.5);
@@ -11,20 +11,20 @@
     --White: hsl(0, 0%, 100%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-html{
+html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.8rem;
-    font-family: system-ui;
+    font-family: 'Outfit', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ body{
 .card__image {
     position: relative;
 }
-.card__image img{
+.card__image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -61,7 +61,7 @@ body{
     border-radius: 8px;
     display: none;
 }
-.card__image:hover .card__image-overlay{
+.card__image:hover .card__image-overlay {
     display: flex;
 }
 .card__body {
@@ -71,7 +71,7 @@ body{
     color: var(--White);
     margin-top: 1.5rem;
 }
-.card__body p{
+.card__body p {
     margin-top: 1.5rem;
 }
 .card__pricing {
@@ -85,7 +85,7 @@ body{
 .card__pricing span {
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: 0.8rem;
 }
 .card__pricing-price {
     font-weight: 600;
@@ -110,16 +110,16 @@ body{
 .card__author-name {
     font-weight: 400;
 }
-.name{
+.name {
     color: var(--White);
 }
-.name:hover, 
+.name:hover,
 h3:hover {
     color: var(--Cyan);
 }
 
-@media screen and (max-width: 768px){
-    html{
+@media screen and (max-width: 768px) {
+    html {
         font-size: 50%;
     }
 }
