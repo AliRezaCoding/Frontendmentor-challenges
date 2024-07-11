@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     /* ### Primary */
@@ -28,12 +29,14 @@ html{
 }
 
 body{
-    font-family: system-ui;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 2rem;
     min-height: 100vh;
     background-color: var(--White);
 }
-
+.header{
+    padding-bottom: 5rem;
+}
 .container{
     max-width: 50%;
     margin: 0 auto;
@@ -89,6 +92,7 @@ p{
     font-style: italic;
     color: var(--Light-Red);
     padding-left: 3rem;
+    margin-top: 5px;
     display: none;
 }
 .label--error--active{
@@ -116,6 +120,30 @@ p{
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.icon{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--Blue);
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 50%;
+}
+
+.icon:hover{
+    color: var(--White);
+    background: var(--Blue);
+    border-color: transparent;
 }
 
 @media screen and (max-width: 992px){
