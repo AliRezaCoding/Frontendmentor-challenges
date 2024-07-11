@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root{
     --White: hsl(0, 0%, 100%);
@@ -20,7 +21,7 @@ html{
 }
 
 body{
-    font-family: system-ui;
+    font-family: "Outfit", sans-serif;
     font-size: 1.5rem;
     min-height: 100vh;
     display: flex;
