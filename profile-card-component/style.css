@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 :root {
     --Dark-cyan: hsl(185, 75%, 39%);
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-    font-family: system-ui;
+    font-family: "Kumbh Sans", sans-serif;
     font-size: 1.8rem;
     min-height: 100vh;
     display: flex;
