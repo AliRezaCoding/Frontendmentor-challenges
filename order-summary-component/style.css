@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
     --Pale-blue: hsl(225, 100%, 94%);
@@ -23,7 +24,7 @@ html{
 }
 
 body{
-    font-family: system-ui;
+    font-family: "Red Hat Display", sans-serif;
     font-size: 1.6rem;
     min-height: 100vh;
     display: flex;
