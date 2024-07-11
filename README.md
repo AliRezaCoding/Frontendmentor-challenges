@@ -32,12 +32,12 @@ Welcome to my repository containing solutions to coding challenges from Frontend
 6. **Tip Calculator App with HTML, CSS, and JavaScript:**
    - **Live Demo:** [Tip Calculator App](https://tip-calculator-app-html-css-js.netlify.app)
    - **Folder:** [tip-calculator-app](/tip-calculator-app)
-   - Description: This challenge involves building a tip calculator app to help users easily calculate tips based on the bill amount, selected tip percentage and number of peoplee.
+   - Description: This challenge involves building a tip calculator app to help users easily calculate tips based on the bill amount, selected tip percentage, and number of people.
 
 7. **Time Tracking Dashboard with HTML, CSS, and JavaScript:**
    - **Live Demo:** [Time Tracking Dashboard](https://time-tracking-dashboard-html-css-js.netlify.app)
    - **Folder:** [time-tracking-dashboard](/time-tracking-dashboard)
-   - Description: This challenge focuses on creating a responsive time tracking dashboard to display and manage daily, monthly and weekly activities.
+   - Description: This challenge focuses on creating a responsive time tracking dashboard to display and manage daily, monthly, and weekly activities.
 
 8. **Contact Form with HTML, CSS, and JavaScript:**
    - **Live Demo:** [Contact Form](https://contact-form-html-css-js.netlify.app)
@@ -98,6 +98,56 @@ Welcome to my repository containing solutions to coding challenges from Frontend
     - **Live Demo:** [Single Price Grid Component](https://singlepricegridcomponenthtmlcss.netlify.app)
     - **Folder:** [single-price-grid-component](/single-price-grid-component)
     - Description: This project involves creating a single price grid component using HTML and CSS to display pricing options in a clean and simple layout.
+
+20. **Recipe Page:**
+    - **Live Demo:** [Recipe Page](https://recipepage-htmlcss.netlify.app)
+    - **Folder:** [recipe-page](/recipe-page)
+    - Description: This project involves creating a beautifully designed recipe page using HTML and CSS to showcase a variety of recipes.
+
+21. **Profile Card Component:**
+    - **Live Demo:** [Profile Card Component](https://profilecardcomponent-htmlcss.netlify.app)
+    - **Folder:** [profile-card-component](/profile-card-component)
+    - Description: This project features a profile card component designed with HTML and CSS to display user information in a compact and visually appealing format.
+
+22. **Order Summary Component:**
+    - **Live Demo:** [Order Summary Component](https://ordersummarycomponent-htmlcss.netlify.app)
+    - **Folder:** [order-summary-component](/order-summary-component)
+    - Description: This project involves creating an order summary component using HTML and CSS, which provides a clear and concise summary of a user's order.
+
+23. **NFT Preview Card Component:**
+    - **Live Demo:** [NFT Preview Card Component](https://nftpreviewcardcomponent-htmlcss.netlify.app)
+    - **Folder:** [nft-preview-card-component](/nft-preview-card-component)
+    - Description: This project features an NFT preview card component designed with HTML and CSS to showcase NFT items in an attractive layout.
+
+24. **QR Code Component:**
+    - **Live Demo:** [QR Code Component](https://qrcodecomponent-htmlcss.netlify.app)
+    - **Folder:** [qr-code-component](/qr-code-component)
+    - Description: This project involves creating a QR code component using HTML and CSS to provide a simple and clean interface for scanning QR codes.
+
+25. **Article Preview Component:**
+    - **Live Demo:** [Article Preview Component](https://articlepreviewcomponent-htmlcss.netlify.app)
+    - **Folder:** [article-preview-component](/article-preview-component)
+    - Description: This project features an article preview component designed with HTML and CSS to provide a summary and preview of articles.
+
+26. **Intro Component with Signup Form:**
+    - **Live Demo:** [Intro Component with Signup Form](https://introcomponentwithsignup-htmlcss.netlify.app)
+    - **Folder:** [intro-component-with-signup-form](/intro-component-with-signup-form)
+    - Description: This project involves creating an introductory component with a signup form using HTML and CSS, aimed at capturing user information.
+
+27. **Ping Coming Soon Page:**
+    - **Live Demo:** [Ping Coming Soon Page](https://pingcomingsoonpage-htmlcss.netlify.app)
+    - **Folder:** [ping-coming-soon-page](/ping-coming-soon-page)
+    - Description: This project features a coming soon page for Ping using HTML and CSS, designed to inform users about an upcoming launch.
+
+28. **Testimonial Grid Section:**
+    - **Live Demo:** [Testimonial Grid Section](https://testimonialgridsection-htmlcss.netlify.app)
+    - **Folder:** [testimonial-grid-section](/testimonial-grid-section)
+    - Description: This project involves creating a testimonial grid section using HTML and CSS to display user testimonials in a structured and visually appealing manner.
+
+29. **Huddle Landing Page:**
+    - **Live Demo:** [Huddle Landing Page](https://huddlelandingpage-htmlcss.netlify.app)
+    - **Folder:** [huddle-landing-page](/huddle-landing-page-with-introductory-section)
+    - Description: This project features a landing page for Huddle, designed with HTML and CSS to provide an introductory section and attract potential users.
 
 ## About Frontend Mentor
 
